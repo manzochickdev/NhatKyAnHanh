@@ -26,6 +26,8 @@
 		AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */; };
 		AF0D4B07291A3F5900BAE2FE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */; };
 		AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */; };
+		AF0D4B0B291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */; };
+		AF0D4B0C291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		AF0D4AFF291A330500BAE2FE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModifyScreen.swift; sourceTree = "<group>"; };
 		AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModifyScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 			children = (
 				AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */,
 				AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */,
+				AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -243,6 +247,7 @@
 				AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
 				AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B07291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
+				AF0D4B0B291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */,
 				AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */,
@@ -258,6 +263,7 @@
 				AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
 				AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
+				AF0D4B0C291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */,
 				AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */,

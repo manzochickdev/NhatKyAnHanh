@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StackNavigationView
 
 struct NoteModifyScreen: View {
     @Environment(\.managedObjectContext) var moc
@@ -64,6 +65,11 @@ struct NoteModifyScreen: View {
                     Text("Add")
                 }
                 
+                StackNavigationLink (
+                    "Modify",
+                    destination: TagModifyScreen()
+                )
+                
                 
             }
             List{
@@ -74,8 +80,6 @@ struct NoteModifyScreen: View {
                         .onTapGesture {
                             print(item)
                         }
-                        .background(Color.clear)
-                        .listRowBackground(Color.clear)
                 }
             }
         }
