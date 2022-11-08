@@ -24,6 +24,8 @@
 		AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFF291A330500BAE2FE /* DataController.swift */; };
 		AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */; };
 		AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */; };
+		AF0D4B07291A3F5900BAE2FE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */; };
+		AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,7 @@
 		AF0D4AFC291A32AD00BAE2FE /* LocalDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDatabase.xcdatamodel; sourceTree = "<group>"; };
 		AF0D4AFF291A330500BAE2FE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModifyScreen.swift; sourceTree = "<group>"; };
+		AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 		AF0D4ACB291A30AC00BAE2FE = {
 			isa = PBXGroup;
 			children = (
+				AF0D4B05291A3F3F00BAE2FE /* Common */,
 				AF0D4AFA291A328800BAE2FE /* Repository */,
 				AF0D4AF6291A317000BAE2FE /* Screens */,
 				AF0D4AEF291A30EA00BAE2FE /* Utility */,
@@ -122,6 +126,14 @@
 				AF0D4AFF291A330500BAE2FE /* DataController.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		AF0D4B05291A3F3F00BAE2FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +242,7 @@
 			files = (
 				AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
 				AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
+				AF0D4B07291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
 				AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */,
@@ -244,6 +257,7 @@
 			files = (
 				AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
 				AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
+				AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
 				AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */,
