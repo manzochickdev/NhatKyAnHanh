@@ -6,15 +6,51 @@
 //
 
 import SwiftUI
+import StackNavigationView
+
+enum SearchOption:String,Hashable,CaseIterable{
+    case keyword = "Keyword"
+    case tag = "Tag"
+}
 
 struct HomeScreen: View {
     @State var keyworld:String = ""
+    @State var searchOption:[SearchOption] = [.keyword,.tag]
+    @State var searchRule:SearchOption = .keyword
     
     var body: some View {
-        VStack{
-            TextField("Search...", text: $keyworld)
+        VStack(alignment:.leading){
+            StackNavigationLink (
+                "Add Note",
+                destination: NoteModifyScreen()
+            )
+
+            HStack{
+                TextField("Search...", text: $keyworld)
+                
+                Picker("",selection: $searchRule) {
+                    ForEach(searchOption,id: \.self){option in
+                        Text(option.rawValue)
+                    }
+                }
+                .width(100)
+                
+                Button {
+                    performSearch()
+                } label: {
+                    Text("Search")
+                }
+
+            }
+            Spacer()
         }
         .padding()
+    }
+}
+
+extension HomeScreen{
+    func performSearch(){
+        
     }
 }
 

@@ -22,6 +22,8 @@
 		AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */; };
 		AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFF291A330500BAE2FE /* DataController.swift */; };
 		AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFF291A330500BAE2FE /* DataController.swift */; };
+		AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */; };
+		AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		AF0D4AFC291A32AD00BAE2FE /* LocalDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDatabase.xcdatamodel; sourceTree = "<group>"; };
 		AF0D4AFF291A330500BAE2FE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModifyScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */,
+				AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -225,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
+				AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */,
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
+				AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */,
 				AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */,
