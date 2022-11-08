@@ -17,6 +17,7 @@ struct HomeScreen: View {
     @State var keyworld:String = ""
     @State var searchOption:[SearchOption] = [.keyword,.tag]
     @State var searchRule:SearchOption = .keyword
+    @FetchRequest(sortDescriptors: []) var listNote:FetchedResults<NoteModel>
     
     var body: some View {
         VStack(alignment:.leading){
@@ -42,7 +43,13 @@ struct HomeScreen: View {
                 }
 
             }
-            Spacer()
+            
+            
+            List{
+                ForEach(listNote){note in
+                    Text(note.title ?? "")
+                }
+            }
         }
         .padding()
     }
