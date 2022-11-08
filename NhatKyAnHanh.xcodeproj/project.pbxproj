@@ -13,6 +13,15 @@
 		AF0D4AE4291A30AE00BAE2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AD2291A30AD00BAE2FE /* ContentView.swift */; };
 		AF0D4AE5291A30AE00BAE2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0D4AD3291A30AE00BAE2FE /* Assets.xcassets */; };
 		AF0D4AE6291A30AE00BAE2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0D4AD3291A30AE00BAE2FE /* Assets.xcassets */; };
+		AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */; };
+		AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */; };
+		AF0D4AF5291A313F00BAE2FE /* StackNavigationView in Frameworks */ = {isa = PBXBuildFile; productRef = AF0D4AF4291A313F00BAE2FE /* StackNavigationView */; };
+		AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */; };
+		AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */; };
+		AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */; };
+		AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */; };
+		AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFF291A330500BAE2FE /* DataController.swift */; };
+		AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFF291A330500BAE2FE /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,10 @@
 		AF0D4AD8291A30AE00BAE2FE /* NhatKyAnHanh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhatKyAnHanh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0D4ADE291A30AE00BAE2FE /* NhatKyAnHanh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhatKyAnHanh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0D4AE0291A30AE00BAE2FE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		AF0D4AFC291A32AD00BAE2FE /* LocalDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDatabase.xcdatamodel; sourceTree = "<group>"; };
+		AF0D4AFF291A330500BAE2FE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0D4AF5291A313F00BAE2FE /* StackNavigationView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +59,9 @@
 		AF0D4ACB291A30AC00BAE2FE = {
 			isa = PBXGroup;
 			children = (
+				AF0D4AFA291A328800BAE2FE /* Repository */,
+				AF0D4AF6291A317000BAE2FE /* Screens */,
+				AF0D4AEF291A30EA00BAE2FE /* Utility */,
 				AF0D4AD0291A30AD00BAE2FE /* Shared */,
 				AF0D4ADF291A30AE00BAE2FE /* macOS */,
 				AF0D4AD9291A30AE00BAE2FE /* Products */,
@@ -76,6 +93,31 @@
 				AF0D4AE0291A30AE00BAE2FE /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		AF0D4AEF291A30EA00BAE2FE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AF0D4AF6291A317000BAE2FE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AF0D4AFA291A328800BAE2FE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */,
+				AF0D4AFF291A330500BAE2FE /* DataController.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +153,9 @@
 			dependencies = (
 			);
 			name = "NhatKyAnHanh (macOS)";
+			packageProductDependencies = (
+				AF0D4AF4291A313F00BAE2FE /* StackNavigationView */,
+			);
 			productName = "NhatKyAnHanh (macOS)";
 			productReference = AF0D4ADE291A30AE00BAE2FE /* NhatKyAnHanh.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +187,9 @@
 				Base,
 			);
 			mainGroup = AF0D4ACB291A30AC00BAE2FE;
+			packageReferences = (
+				AF0D4AF3291A313F00BAE2FE /* XCRemoteSwiftPackageReference "StackNavigationView" */,
+			);
 			productRefGroup = AF0D4AD9291A30AE00BAE2FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
+				AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */,
+				AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */,
+				AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */,
 				AF0D4AE3291A30AE00BAE2FE /* ContentView.swift in Sources */,
 				AF0D4AE1291A30AE00BAE2FE /* NhatKyAnHanhApp.swift in Sources */,
 			);
@@ -185,6 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0D4AFE291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */,
+				AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */,
+				AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */,
+				AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */,
 				AF0D4AE4291A30AE00BAE2FE /* ContentView.swift in Sources */,
 				AF0D4AE2291A30AE00BAE2FE /* NhatKyAnHanhApp.swift in Sources */,
 			);
@@ -450,6 +506,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF0D4AF3291A313F00BAE2FE /* XCRemoteSwiftPackageReference "StackNavigationView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lbrndnr/StackNavigationView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF0D4AF4291A313F00BAE2FE /* StackNavigationView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF0D4AF3291A313F00BAE2FE /* XCRemoteSwiftPackageReference "StackNavigationView" */;
+			productName = StackNavigationView;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF0D4AFC291A32AD00BAE2FE /* LocalDatabase.xcdatamodel */,
+			);
+			currentVersion = AF0D4AFC291A32AD00BAE2FE /* LocalDatabase.xcdatamodel */;
+			path = LocalDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AF0D4ACC291A30AC00BAE2FE /* Project object */;
 }

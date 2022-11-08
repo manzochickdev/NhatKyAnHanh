@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import StackNavigationView
 
 struct ContentView: View {
+    @State var selection:Int? = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        StackNavigationView(selection: $selection) {
+            SidebarNavigationLink(
+                destination: HomeScreen(),
+                tag: 0,
+                selection: $selection
+            ){
+                Text("Home")
+                    .expandedWidth()
+            }
+        }
+        
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .defaultFrame()
     }
 }
