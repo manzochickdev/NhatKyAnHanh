@@ -10,19 +10,45 @@ import StackNavigationView
 
 struct ContentView: View {
     @State var selection:Int? = 0
+    @Environment(\.managedObjectContext) var moc
     var body: some View {
         StackNavigationView(selection: $selection) {
-            SidebarNavigationLink(
-                destination: HomeScreen(),
-                tag: 0,
-                selection: $selection
-            ){
-                Text("Home")
-                    .expandedWidth()
+            VStack{
+                SidebarNavigationLink(
+                    destination: HomeScreen(),
+                    tag: 0,
+                    selection: $selection
+                ){
+                    Text("Home")
+                        .expandedWidth()
+                }
+                
+//                Button {
+//                    testFunc()
+//                } label: {
+//                    Text("Test Function")
+//                }
+                
+
             }
+            .padding()
         }
         
         
+    }
+}
+
+extension ContentView{
+    func testFunc(){
+        let model = TagModel(context: moc)
+        model.id = UUID()
+        model.name = "Utils"
+        
+        
+        let model1 = TagModel(context: moc)
+        model1.id = UUID()
+        model1.name = "macOS"
+        try? moc.save()
     }
 }
 

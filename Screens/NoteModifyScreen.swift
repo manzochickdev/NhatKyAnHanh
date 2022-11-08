@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct NoteModifyScreen: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var listTagData:FetchedResults<TagModel>
     @State var title:String = ""
     @State var content:String = ""
     @State var tagKeyword:String = ""
@@ -30,15 +32,21 @@ struct NoteModifyScreen: View {
             
             Text("Tag")
             
-            Button {
-                shouldShowTagSuggestion = true
-            } label: {
-                HStack{
-                    Image(systemName: "plus")
-                    Text("Add Tag")
+            HStack{
+                Button {
+                    shouldShowTagSuggestion = true
+                } label: {
+                    HStack{
+                        Image(systemName: "plus")
+                        Text("Add Tag")
+                    }
+                }.popover(isPresented: $shouldShowTagSuggestion,arrowEdge:.bottom) {
+                    renderTagSearchView
                 }
-            }.popover(isPresented: $shouldShowTagSuggestion,arrowEdge:.bottom) {
-                renderTagSearchView
+                
+                ForEach(listTag,id: \.id){tag in
+                    Text(tag.name ?? "")
+                }
             }
             
         }
@@ -49,8 +57,8 @@ struct NoteModifyScreen: View {
         VStack{
             TextField("", text: $tagKeyword)
             List{
-                ForEach(["A","B","C"],id: \.self) { item in
-                    Text(item)
+                ForEach(listTagData,id: \.id) { item in
+                    Text(item.name ?? "")
                         .expandedWidth()
                         .contentShape(Rectangle())
                         .onTapGesture {
