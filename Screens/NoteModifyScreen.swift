@@ -55,21 +55,44 @@ struct NoteModifyScreen: View {
     
     var renderTagSearchView : some View{
         VStack{
-            TextField("", text: $tagKeyword)
+            HStack{
+                TextField("", text: $tagKeyword)
+                
+                Button {
+                    addNewTag()
+                } label: {
+                    Text("Add")
+                }
+                
+                
+            }
             List{
                 ForEach(listTagData,id: \.id) { item in
                     Text(item.name ?? "")
-                        .expandedWidth()
+                        .expandedWidth(alignment: .leading)
                         .contentShape(Rectangle())
                         .onTapGesture {
                             print(item)
                         }
+                        .background(Color.clear)
+                        .listRowBackground(Color.clear)
                 }
             }
         }
         .padding()
         .width(300)
         .height(200)
+    }
+}
+
+extension NoteModifyScreen{
+    func addNewTag(){
+        guard !tagKeyword.isEmpty else{return}
+        let model = TagModel(context: moc)
+        model.id = UUID()
+        model.name = tagKeyword
+        
+        try? moc.save()
     }
 }
 
