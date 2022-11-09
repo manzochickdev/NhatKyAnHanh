@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import StackNavigationView
 
 struct NoteModifyScreen: View {
     @Environment(\.managedObjectContext) var moc
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.pop) private var pop
     
     @FetchRequest(sortDescriptors: []) var listTagData:FetchedResults<TagModel>
     @State var title:String = ""
@@ -23,7 +22,7 @@ struct NoteModifyScreen: View {
         VStack(alignment:.leading){
             Button {
                 saveNewNote()
-                presentationMode.wrappedValue.dismiss()
+                pop()
             } label: {
                 Text("Save")
             }

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import StackNavigationView
 
 enum SearchOption:String,Hashable,CaseIterable{
     case keyword = "Keyword"

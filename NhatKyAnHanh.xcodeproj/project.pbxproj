@@ -15,7 +15,6 @@
 		AF0D4AE6291A30AE00BAE2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0D4AD3291A30AE00BAE2FE /* Assets.xcassets */; };
 		AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */; };
 		AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF0291A30FA00BAE2FE /* ViewModifiers.swift */; };
-		AF0D4AF5291A313F00BAE2FE /* StackNavigationView in Frameworks */ = {isa = PBXBuildFile; productRef = AF0D4AF4291A313F00BAE2FE /* StackNavigationView */; };
 		AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */; };
 		AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AF7291A317F00BAE2FE /* HomeScreen.swift */; };
 		AF0D4AFD291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */; };
@@ -28,6 +27,16 @@
 		AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */; };
 		AF0D4B0B291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */; };
 		AF0D4B0C291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */; };
+		AF0D4B17291B4EA300BAE2FE /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B12291B4EA300BAE2FE /* Environment.swift */; };
+		AF0D4B18291B4EA300BAE2FE /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B12291B4EA300BAE2FE /* Environment.swift */; };
+		AF0D4B19291B4EA300BAE2FE /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B13291B4EA300BAE2FE /* CurrentView.swift */; };
+		AF0D4B1A291B4EA300BAE2FE /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B13291B4EA300BAE2FE /* CurrentView.swift */; };
+		AF0D4B1B291B4EA300BAE2FE /* StackNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B14291B4EA300BAE2FE /* StackNavigationView.swift */; };
+		AF0D4B1C291B4EA300BAE2FE /* StackNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B14291B4EA300BAE2FE /* StackNavigationView.swift */; };
+		AF0D4B1D291B4EA300BAE2FE /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B15291B4EA300BAE2FE /* ModalView.swift */; };
+		AF0D4B1E291B4EA300BAE2FE /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B15291B4EA300BAE2FE /* ModalView.swift */; };
+		AF0D4B1F291B4EA300BAE2FE /* NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B16291B4EA300BAE2FE /* NavigationLink.swift */; };
+		AF0D4B20291B4EA300BAE2FE /* NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D4B16291B4EA300BAE2FE /* NavigationLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,11 @@
 		AF0D4B02291A390400BAE2FE /* NoteModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModifyScreen.swift; sourceTree = "<group>"; };
 		AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		AF0D4B0A291A5F6800BAE2FE /* TagModifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModifyScreen.swift; sourceTree = "<group>"; };
+		AF0D4B12291B4EA300BAE2FE /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AF0D4B13291B4EA300BAE2FE /* CurrentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
+		AF0D4B14291B4EA300BAE2FE /* StackNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackNavigationView.swift; sourceTree = "<group>"; };
+		AF0D4B15291B4EA300BAE2FE /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		AF0D4B16291B4EA300BAE2FE /* NavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0D4AF5291A313F00BAE2FE /* StackNavigationView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,9 +148,22 @@
 		AF0D4B05291A3F3F00BAE2FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AF0D4B11291B4EA300BAE2FE /* StackNavigationView */,
 				AF0D4B06291A3F5900BAE2FE /* CustomTextView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		AF0D4B11291B4EA300BAE2FE /* StackNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D4B12291B4EA300BAE2FE /* Environment.swift */,
+				AF0D4B13291B4EA300BAE2FE /* CurrentView.swift */,
+				AF0D4B14291B4EA300BAE2FE /* StackNavigationView.swift */,
+				AF0D4B15291B4EA300BAE2FE /* ModalView.swift */,
+				AF0D4B16291B4EA300BAE2FE /* NavigationLink.swift */,
+			);
+			path = StackNavigationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +200,6 @@
 			);
 			name = "NhatKyAnHanh (macOS)";
 			packageProductDependencies = (
-				AF0D4AF4291A313F00BAE2FE /* StackNavigationView */,
 			);
 			productName = "NhatKyAnHanh (macOS)";
 			productReference = AF0D4ADE291A30AE00BAE2FE /* NhatKyAnHanh.app */;
@@ -248,11 +273,16 @@
 				AF0D4B03291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B07291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
 				AF0D4B0B291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */,
+				AF0D4B19291B4EA300BAE2FE /* CurrentView.swift in Sources */,
+				AF0D4B1B291B4EA300BAE2FE /* StackNavigationView.swift in Sources */,
 				AF0D4B00291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF8291A317F00BAE2FE /* HomeScreen.swift in Sources */,
+				AF0D4B1D291B4EA300BAE2FE /* ModalView.swift in Sources */,
+				AF0D4B1F291B4EA300BAE2FE /* NavigationLink.swift in Sources */,
 				AF0D4AF1291A30FA00BAE2FE /* ViewModifiers.swift in Sources */,
 				AF0D4AE3291A30AE00BAE2FE /* ContentView.swift in Sources */,
 				AF0D4AE1291A30AE00BAE2FE /* NhatKyAnHanhApp.swift in Sources */,
+				AF0D4B17291B4EA300BAE2FE /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +294,16 @@
 				AF0D4B04291A390400BAE2FE /* NoteModifyScreen.swift in Sources */,
 				AF0D4B08291A3F5900BAE2FE /* CustomTextView.swift in Sources */,
 				AF0D4B0C291A5F6800BAE2FE /* TagModifyScreen.swift in Sources */,
+				AF0D4B1A291B4EA300BAE2FE /* CurrentView.swift in Sources */,
+				AF0D4B1C291B4EA300BAE2FE /* StackNavigationView.swift in Sources */,
 				AF0D4B01291A330500BAE2FE /* DataController.swift in Sources */,
 				AF0D4AF9291A317F00BAE2FE /* HomeScreen.swift in Sources */,
+				AF0D4B1E291B4EA300BAE2FE /* ModalView.swift in Sources */,
+				AF0D4B20291B4EA300BAE2FE /* NavigationLink.swift in Sources */,
 				AF0D4AF2291A312100BAE2FE /* ViewModifiers.swift in Sources */,
 				AF0D4AE4291A30AE00BAE2FE /* ContentView.swift in Sources */,
 				AF0D4AE2291A30AE00BAE2FE /* NhatKyAnHanhApp.swift in Sources */,
+				AF0D4B18291B4EA300BAE2FE /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,14 +578,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AF0D4AF4291A313F00BAE2FE /* StackNavigationView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF0D4AF3291A313F00BAE2FE /* XCRemoteSwiftPackageReference "StackNavigationView" */;
-			productName = StackNavigationView;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AF0D4AFB291A32AD00BAE2FE /* LocalDatabase.xcdatamodeld */ = {
